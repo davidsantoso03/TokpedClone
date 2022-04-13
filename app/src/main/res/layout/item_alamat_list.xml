@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:layout_marginHorizontal="@dimen/_3sdp"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_kota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Tangerang"
+                android:textAppearance="@style/TypographyStyles.Text2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_menu"
+                style="@style/image_clickable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Jalan Kubinka no 28"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grey6"
+            android:textAppearance="@style/TypographyStyles.Text3" />
+
+        <View
+            android:background="@color/grey2"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TypographyStyles.Text3"
+            app:drawableTint="@color/grey6"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_asset_smartphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="08128399290"/>
+
+        <View
+            android:background="@color/grey2"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TypographyStyles.Text3"
+            app:drawableTint="@color/grey6"
+            android:drawablePadding="@dimen/_7sdp"
+            android:drawableStart="@drawable/ic_asset_smartphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email@gmail.com"/>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

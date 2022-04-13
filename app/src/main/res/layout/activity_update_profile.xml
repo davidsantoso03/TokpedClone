@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.updateProfile.UpdateProfileActivity">
+    
+    //toolbar
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:padding="@dimen/_3sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <com.google.android.material.card.MaterialCardView
+
+            app:cardCornerRadius="@dimen/_25sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_inisial"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="DS"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_25sdp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+                <!--                    android:src="@drawable/img_profile" -->
+                />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="0dp"
+                android:text="dave123@gmail.com" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Full Name"
+                android:paddingStart="0dp"
+                android:text="dave" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:paddingStart="0dp"
+                android:text="082399288333" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

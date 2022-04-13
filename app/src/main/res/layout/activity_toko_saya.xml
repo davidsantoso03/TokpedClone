@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    tools:context=".ui.toko.TokoSayaActivity">
+    <include
+        android:id="@+id/ly_toolbar"
+        layout="@layout/layout_toolbar"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            app:cardCornerRadius="@dimen/_25sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_inisial"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="DS"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_25sdp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nama_toko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Toko"
+                    android:textColor="@color/dark"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0 "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skor Perfoma Toko"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_12ssp"
+    />
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Button.OutlineBox"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaksi sejak bergabung "
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/100"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/dark"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <View
+
+        android:background="@color/grey2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginVertical="@dimen/_15sdp"/>
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <TextView
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:textAppearance="@style/TypographyStyles.Text1.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Toko"
+        android:textColor="@color/grey7"
+        android:textSize="@dimen/_12ssp"  />
+
+    <LinearLayout
+        android:id="@+id/btn_alamat"
+        style="@style/layout_clickable"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_placeholder"
+            app:tint="@color/grey6"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textAppearance="@style/TypographyStyles.Text2"
+            android:textColor="@color/grey6"
+            android:layout_marginStart="@dimen/_8sdp"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>

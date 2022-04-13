@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.toko.BukaTokoActivity">
+    <include
+        android:id="@+id/ly_toolbar"
+        layout="@layout/layout_toolbar"/>
+    <RelativeLayout
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:text="Masukan Info Toko"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_nama_toko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Apa nama tokomu"
+                android:paddingStart="0dp"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:text="Nama yang menarik lebih mudah diingat pembeli nama yang sudah dipilih tidak dapat diubah"
+            android:textColor="@color/grey6"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_lokasi_toko"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Lokasi tokomu"
+                android:paddingStart="0dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:text="Lokasi toko untuk memudahkan pembeli mengetahui darimana barang dikiri "
+            android:textColor="@color/grey6"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_buat_toko"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="12dp"
+            android:text="Buat Toko"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp" />
+    </RelativeLayout>
+</LinearLayout>
